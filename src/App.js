@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MyLinks from './components/Links';
-import TodoList from './components/Todo';
+import MyBookList from './components/BookList';
 import MyCategory from './components/Categories';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <MyLinks />
         <Routes>
-          <Route path="/" element={<TodoList />} />
+          <Route path="/" element={<MyBookList />} />
           <Route path="/category" element={<MyCategory />} />
         </Routes>
       </BrowserRouter>
