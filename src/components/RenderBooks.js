@@ -21,7 +21,7 @@ function Render({
             <br />
             {item.author}
           </p>
-          <Button value="Remove" className="remove-btn" type="button" onClick={(e) => removedBooks(e.target.parentElement.Id)} />
+          <Button value="Remove" className="remove-btn" type="button" onClick={(e) => removedBooks(e.target.parentElement.id)} />
         </div>
       ))}
     </>
@@ -30,7 +30,7 @@ function Render({
 
 Render.propTypes = {
   renderData:
-  PropTypes.arrayOf(PropTypes.array).isRequired,
+  PropTypes.array.isRequired,
 };
 
 export default Render;

@@ -15,11 +15,14 @@ function Button({
     </button>
   );
 }
+Button.defaultProps = {
+  onClick: () => {},
+};
 
 Button.propTypes = {
   type: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   value: PropTypes.string.isRequired,
 };
 export default Button;
