@@ -1,21 +1,38 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import Button from './Button';
+import { removeBook } from '../redux/books/myBookSlice';
 
-const Render = ({ renderData }) => (
-  <>
-    {renderData.map((item) => (
-      <div key={item.id}>
-        <h2>{item.title}</h2>
+function Render({
+  id, title, author, key,
+}) {
+  const dispatch = useDispatch();
+
+  const removedBooks = () => {
+    dispatch(removeBook(id));
+  };
+  return (
+    <>
+
+      <div id={id} key={key}>
+        <h2>{title}</h2>
         <p>
-          By
-          {item.author}
+          By:
+          <br />
+          {author}
         </p>
-        <button type="button" id="remove">Remove</button>
+        <Button value="Remove" className="remove-btn" type="button" onClick={removedBooks} />
       </div>
-    ))}
-  </>
-);
+
+    </>
+  );
+}
+
 Render.propTypes = {
-  renderData: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  key: PropTypes.string.isRequired,
 };
 
 export default Render;

@@ -1,29 +1,23 @@
+import { useSelector } from 'react-redux';
 import MyForm from './Form';
 import Render from './RenderBooks';
 
 const MyBookList = () => {
-  const data = [
-    {
-      id: 1,
-      title: 'Setup React website',
-      author: 'Zunair',
-    },
-    {
-      id: 2,
-      title: 'Space and the world',
-      author: 'Ali',
-    },
-    {
-      id: 3,
-      title: 'Science fiction',
-      author: 'Akram ',
-    },
-  ];
+  const data = useSelector((state) => state.books.myBooks);
+
   return (
     <>
 
       <div className="container">
-        <Render renderData={data} />
+        {data.map((item) => (
+          <Render
+            key={item.item_Id}
+            id={item.item_Id}
+            title={item.title}
+            author={item.author}
+          />
+        ))}
+
         <MyForm />
       </div>
     </>
