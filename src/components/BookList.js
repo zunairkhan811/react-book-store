@@ -9,7 +9,15 @@ const MyBookList = () => {
     <>
 
       <div className="container">
-        <Render renderData={data} />
+        {data.map((item) => (
+          <Render
+            key={item.item_Id}
+            id={item.item_Id}
+            title={item.title}
+            author={item.author}
+          />
+        ))}
+
         <MyForm />
       </div>
     </>

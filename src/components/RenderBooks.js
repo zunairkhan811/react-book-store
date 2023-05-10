@@ -4,33 +4,35 @@ import Button from './Button';
 import { removeBook } from '../redux/books/myBookSlice';
 
 function Render({
-  renderData,
+  id, title, author, key,
 }) {
   const dispatch = useDispatch();
 
-  const removedBooks = (item_Id) => {
-    dispatch(removeBook(item_Id));
+  const removedBooks = () => {
+    dispatch(removeBook(id));
   };
   return (
     <>
-      {renderData.map((item) => (
-        <div id={item.item_Id} key={item.item_Id}>
-          <h2>{item.title}</h2>
-          <p>
-            By:
-            <br />
-            {item.author}
-          </p>
-          <Button value="Remove" className="remove-btn" type="button" onClick={(e) => removedBooks(e.target.parentElement.id)} />
-        </div>
-      ))}
+
+      <div id={id} key={key}>
+        <h2>{title}</h2>
+        <p>
+          By:
+          <br />
+          {author}
+        </p>
+        <Button value="Remove" className="remove-btn" type="button" onClick={removedBooks} />
+      </div>
+
     </>
   );
 }
 
 Render.propTypes = {
-  renderData:
-  PropTypes.array.isRequired,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  key: PropTypes.string.isRequired,
 };
 
 export default Render;
