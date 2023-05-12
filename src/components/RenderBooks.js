@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import Button from './Button';
-import { removeBook } from '../redux/books/myBookSlice';
+import removeBooks from '../redux/books/removeDataFromApi';
 
 function Render({
   id, title, author, key,
 }) {
   const dispatch = useDispatch();
-
   const removedBooks = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBooks(id));
   };
   return (
     <>
