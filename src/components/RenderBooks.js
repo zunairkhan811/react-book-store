@@ -7,7 +7,6 @@ function Render({
   id, title, author, key,
 }) {
   const dispatch = useDispatch();
-  console.log(id);
   const removedBooks = () => {
     dispatch(removeBooks(id));
   };

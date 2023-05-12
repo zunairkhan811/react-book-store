@@ -14,18 +14,21 @@ function MyForm() {
     author,
     category: 'Science-fiction',
   };
+
   const handleclick = (e) => {
     e.preventDefault();
     e.stopPropagation();
     dispatch(addBooks(data));
+    setTitle('');
+    setAuthor('');
   };
 
   return (
     <>
       <form onSubmit={handleclick}>
-        <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Your Title Here..." />
+        <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Your Title Here..." required />
         <br />
-        <input type="text" id="name" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Your Name Here..." />
+        <input type="text" id="name" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Your Name Here..." required />
         <br />
         <Button type="submit" value="Add Book" className="add-book-btn" />
       </form>

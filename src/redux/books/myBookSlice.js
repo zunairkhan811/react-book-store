@@ -24,7 +24,7 @@ const newBooks = (payload) => {
 const booklists = createSlice({
   name: 'Booklist',
   initialState,
-  extraReducers:(builder)=>{
+  extraReducers: (builder) => {
     builder
       .addCase(fetchData.pending, (state) => {
         state.loading = true;
@@ -44,10 +44,9 @@ const booklists = createSlice({
       })
       .addCase(removeBooks.fulfilled, (state, action) => {
         state.data = state.data.filter((book) => book.item_id !== action.payload);
-      })
+      });
   },
 
 });
 
-// export const { addBooks, removeBook } = myBooksSlice.actions;
 export default booklists.reducer;
