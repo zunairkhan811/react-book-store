@@ -2,16 +2,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import MyForm from './Form';
 import Render from './RenderBooks';
-import { fetchData } from '../redux/books/myBookSlice';
+import fetchData from '../redux/books/fetchApi';
 // import Button from './Button';
 
 const MyBookList = () => {
-  const data = useSelector((state) => state.books.data);
-  console.log(data);
+  const state = useSelector((state) => state.books);
+  // console.log(data);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchData());
-  }, []);
+  }, [dispatch]);
 
   // if (state.books.isLoading) {
 
@@ -27,7 +27,7 @@ const MyBookList = () => {
     <>
 
       <div className="container">
-        {data.map((item) => (
+        {state.data.map((item) => (
           <Render
             key={item.item_id}
             id={item.item_id}

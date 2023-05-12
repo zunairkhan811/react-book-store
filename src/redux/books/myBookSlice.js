@@ -1,16 +1,7 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/8uAGkqGHBMzF9G5Da8NZ/books';
-
-export const fetchData = createAsyncThunk('Booklists/get', async (arg, { rejectWithValue }) => {
-  try {
-    const { data } = await axios.get(url);
-    return data;
-  } catch (error) {
-    return rejectWithValue(error.response.data);
-  }
-});
+import { createSlice } from '@reduxjs/toolkit';
+import fetchData from './fetchApi';
+import addBooks from './sendDataToApi';
+import removeBooks from './removeDataFromApi';
 
 const initialState = {
   data: [],
@@ -33,21 +24,27 @@ const newBooks = (payload) => {
 const booklists = createSlice({
   name: 'Booklist',
   initialState,
-  reducers: {},
-  extraReducers: {
-    [fetchData.pending]: (state) => {
-      state.loading = true;
-    },
-    [fetchData.fulfilled]: (state, { payload }) => {
-      state.loading = false;
-      state.data = newBooks(payload);
-      state.isSuccess = true;
-    },
-    [fetchData.rejected]: (state, { payload }) => {
-      state.message = payload;
-      state.loading = false;
-      state.isSuccess = false;
-    },
+  extraReducers:(builder)=>{
+    builder
+      .addCase(fetchData.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(fetchData.fulfilled, (state, action) => {
+        state.loading = false;
+        state.data = newBooks(action.payload);
+        state.isSuccess = true;
+      })
+      .addCase(fetchData.rejected, (state, action) => {
+        state.message = action.payload;
+        state.loading = false;
+        state.isSuccess = false;
+      })
+      .addCase(addBooks.fulfilled, (state, action) => {
+        state.data.push(action.payload);
+      })
+      .addCase(removeBooks.fulfilled, (state, action) => {
+        state.data = state.data.filter((book) => book.item_id !== action.payload);
+      })
   },
 
 });
