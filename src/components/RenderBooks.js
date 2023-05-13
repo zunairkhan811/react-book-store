@@ -28,7 +28,7 @@ function Render({
           <div className="complete-div">
             <div className="oval" />
             <span>
-              <p>64%</p>
+              <p>100%</p>
               <p>Completed</p>
             </span>
 
