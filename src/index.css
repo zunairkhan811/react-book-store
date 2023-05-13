@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -10,16 +11,18 @@ body {
   background: #f5f6fa;
 }
 
-.main-container{
+.main {
+  padding: 50px;
+  margin: 0;
+}
+
+.main-container {
   background: #fafafa;
-  width: 80%;
-  margin: auto;
-  position: relative;
-  top: 50px;
+  height: 100%;
   box-shadow: 0 1px 15px 1px rgb(184, 178, 178);
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,20 +33,19 @@ body {
   background-color: #fff;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
 
-.nav-links li{
+.nav-links li {
   padding: 8px;
   margin: 10px;
-  
 }
 
-.links{
+.links {
   padding: 8px;
   margin: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -56,23 +58,154 @@ body {
   color: #121212;
 }
 
-.navli.active {
-  background-color: #0290ff !important;
+.links:active {
+  color: #0290ff !important;
 }
 
-.nav-logo{
+.nav-logo {
   font-family: 'Montserrat', sans-serif;
-    font-size: 2.275rem;
-    color: #0290ff;
-    font-weight: 800;
+  font-size: 2.275rem;
+  color: #0290ff;
+  font-weight: 800;
 }
 
-.nav-icon{
+.nav-icon {
   font-size: 25px;
   color: #0290ff;
 }
 
-.form-container{
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 2.375rem auto;
+  padding: 1.438rem 4.188rem 1.688rem 4.188rem;
+  background-color: #fff;
+  box-shadow: 0 1px 15px 1px rgb(184, 178, 178);
+}
+
+.info-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+  border-right: 2px solid #e8e8e8;
+}
+
+.remove-div h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #888;
+}
+
+.remove-div h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  margin: 8px 0 8px 0;
+  font-weight: bold;
+  color: #121212;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.remove-div p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 19px;
+  font-weight: 500;
+  margin: 8px 0 8px 0;
+  color: #4386bf;
+}
+
+.remove-btn {
+  border: none;
+  background: white;
+  cursor: pointer;
+  margin: 0 5px 0 0;
+  padding: 0 9px 0 2px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
+  border-right: 1px solid black;
+}
+
+.remove-btn:last-child {
+  border-right: none;
+}
+
+.complete-div {
+  display: flex;
+}
+
+.complete-div span {
+  margin: 9px;
+}
+
+.complete-div span p {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: #121212;
+}
+
+.complete-div span p:first-child {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.oval {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #307bbe;
+  border-image-slice: 1;
+  border-radius: 50%;
+  background-color: transparent !important;
+}
+
+.update-div {
+  width: 20%;
+}
+
+.update-div h2 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+  margin: 8px 0 8px 0.9rem;
+  color: #121212;
+}
+
+.update-div h2:first-child {
+  font-family: 'Roboto Slab', serif;
+  font-size: 19px;
+  font-weight: 300;
+  margin: 8px 0 8px 0.9rem;
+  color: #121212;
+}
+
+.update-btn {
+  font-family: 'Roboto Slab', serif;
+  width: 11.5rem;
+  color: white;
+  border: 1px solid;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 0.9rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  transition: 0.5s;
+}
+
+.update-btn:hover {
+  background-color: #102f46;
+}
+
+.form-container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -80,21 +213,21 @@ body {
   width: 100%;
   margin: 2.375rem 0 0 0;
   padding: 1.438rem 4.188rem 1.688rem 4.188rem;
-
 }
 
-.line{
+.line {
   width: 84%;
-  margin: 30px auto 0px auto;
+  margin: 30px auto 0 auto;
   border: 1px solid #c4c4c4;
 }
 
-.form-heading{
+.form-heading {
   display: flex;
   width: 100%;
   padding: 0 4.188rem 0 1.388rem;
 }
-.form-heading h1{
+
+.form-heading h1 {
   height: 1.5rem;
   margin: 0 32.75rem 0 0;
   font-family: 'Montserrat', sans-serif;
@@ -107,17 +240,17 @@ body {
   color: #888;
 }
 
-.input-container{
+.input-container {
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 0 0 1.688rem 0;
 }
 
-#title{
+#title {
   width: 41.5rem;
   height: 2.813rem;
-  margin: 1.188rem 2.125rem 0 1.4rem;
+  margin: 1.188rem 0 0 1.4rem;
   padding: 0.375rem 0.938rem 0.563rem 1rem;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
@@ -129,17 +262,16 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.15px;
-  color: #c4c4c4;
 }
 
-#title:focus{
+#title:focus {
   outline: 1px solid #0290ff;
 }
 
-#author{
+#author {
   width: 17.813rem;
   height: 2.813rem;
-  margin: 1.188rem 2.125rem 0;
+  margin: 1.188rem 0 0 1.125rem;
   padding: 0.375rem 0.938rem 0.563rem 1rem;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
@@ -151,17 +283,16 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.15px;
-  color: #c4c4c4;
 }
 
-#author:focus{
+#author:focus {
   outline: 1px solid #0290ff;
 }
 
-.add-book-btn{
+.add-book-btn {
   width: 15.5rem;
   height: 2.813rem;
-  margin: 1.188rem 0 0 2.125rem;
+  margin: 1.188rem 0 0 1.125rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border: 1px solid;
   border-radius: 3px;
@@ -176,9 +307,22 @@ body {
   text-align: center;
   color: #fff;
   cursor: pointer;
+  transition: 0.5s;
 }
 
-.add-book-btn:hover{
+.add-book-btn:hover {
   background-color: #102f46;
 }
 
+.category-btn {
+  height: 1.5rem;
+  margin: 0 0 0 32rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}

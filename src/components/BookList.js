@@ -23,7 +23,7 @@ const MyBookList = () => {
             author={item.author}
           />
         ))}
-         <div className="line"></div>
+        <div className="line" />
         <MyForm />
       </div>
 

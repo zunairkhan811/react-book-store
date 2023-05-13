@@ -1,5 +1,5 @@
 const MyCategory = () => (
-  <button type="button" className="category-btn">Go back</button>
+  <p className="category-btn">Under Construction</p>
 );
 
 export default MyCategory;
