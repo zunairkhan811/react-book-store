@@ -25,12 +25,15 @@ function MyForm() {
 
   return (
     <>
-      <form onSubmit={handleclick}>
-        <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Your Title Here..." required />
+      <form className='form-container' onSubmit={handleclick}>
+        <div className='form-heading'><h1>ADD NEW BOOK</h1></div>
+        <div className='input-container'>
+        <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Book title" required />
         <br />
-        <input type="text" id="name" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Your Name Here..." required />
+        <input type="text" id="author" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" required />
         <br />
         <Button type="submit" value="Add Book" className="add-book-btn" />
+        </div>
       </form>
     </>
   );

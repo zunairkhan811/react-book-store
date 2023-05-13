@@ -7,11 +7,13 @@ function App() {
   return (
     <>
       <BrowserRouter>
+       <div className='main-container'>
         <MyLinks />
         <Routes>
           <Route path="/" element={<MyBookList />} />
           <Route path="/category" element={<MyCategory />} />
         </Routes>
+        </div>
       </BrowserRouter>
     </>
   );
