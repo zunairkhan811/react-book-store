@@ -7,12 +7,14 @@ import addBooks from '../redux/books/sendDataToApi';
 function MyForm() {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] =  useState('');
+  console.log(category)
   const dispatch = useDispatch();
   const data = {
     item_id: uuidv4(),
     title,
     author,
-    category: 'Science-fiction',
+    category,
   };
 
   const handleclick = (e) => {
@@ -21,6 +23,7 @@ function MyForm() {
     dispatch(addBooks(data));
     setTitle('');
     setAuthor('');
+    setCategory('');
   };
 
   return (
@@ -32,16 +35,16 @@ function MyForm() {
           <br />
           <input type="text" id="author" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" required />
           <br />
-          <select id="category" name="category">
+          <select id="category" name="category" onChange={(e) => setCategory(e.target.value)} required>
             <option value="select">Select Category</option>
-            <option value="fiction">Science Fiction</option>
-            <option value="horror">Horror</option>
-            <option value="action">Action</option>
-            <option value="comedy">Comedy</option>
-            <option value="documentary">Documentary</option>
-            <option value="thriller">Thriller</option>
-            <option value="adventure">Adventure</option>
-            <option value="romantic">Romantic</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Horror">Horror</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Romantic">Romantic</option>
           </select>
           <Button type="submit" value="Add Book" className="add-book-btn" />
         </div>
