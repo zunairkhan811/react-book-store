@@ -289,7 +289,42 @@ body {
   outline: 1px solid #0290ff;
 }
 
-#category{
+.category-container{
+  height: 90vh;
+}
+
+.category-container ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: square;
+  width: 90%;
+  margin: 0 auto 2.375rem auto;
+  padding: 1.438rem 4.188rem 1.688rem 4.188rem;
+  background-color: #457397;
+  color: white;
+  box-shadow: 0 1px 15px 1px rgb(184, 178, 178);
+}
+
+.category-container ul li{
+  width: 40%;
+  margin: 20px auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  cursor: pointer;
+}
+
+.category-container ul li:hover{
+  text-decoration: underline;
+}
+
+#categorybtn{
   width: 20%;
   height: 2.813rem;
   margin: 1.188rem 0 0 1.125rem;
@@ -306,9 +341,10 @@ body {
   letter-spacing: -0.15px;
 }
 
-#category:focus {
+#categorybtn:focus {
   outline: 1px solid #0290ff;
 }
+
 
 .add-book-btn {
   width: 15.5rem;

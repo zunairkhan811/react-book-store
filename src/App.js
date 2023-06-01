@@ -13,6 +13,7 @@ function App() {
             <Routes>
               <Route path="/" element={<MyBookList />} />
               <Route path="/category" element={<MyCategory />} />
+              <Route path="/category/:type" element={<MyBookList />} />
             </Routes>
           </div>
         </div>
