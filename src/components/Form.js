@@ -34,8 +34,8 @@ function MyForm() {
           <br />
           <input type="text" id="author" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" required />
           <br />
-          <select id="categorybtn" name="categorybtn" onChange={(e) => setCategory(e.target.value)} required>
-            <option value="select">Select Category</option>
+          <select value={category} id="categorybtn" name="categorybtn" onChange={(e) => setCategory(e.target.value)} required>
+            <option value="">Select Category</option>
             <option value="Science Fiction">Science Fiction</option>
             <option value="Horror">Horror</option>
             <option value="Action">Action</option>

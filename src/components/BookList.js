@@ -10,8 +10,10 @@ const MyBookList = () => {
   const dispatch = useDispatch();
   const { type } = useParams();
   useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch, state]);
+    if (state.data.length === 0) {
+      dispatch(fetchData());
+    }
+  }, [dispatch, state.data.length]);
 
   if (type != null) {
     return (
