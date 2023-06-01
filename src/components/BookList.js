@@ -8,7 +8,10 @@ const MyBookList = () => {
   const state = useSelector((state) => state.books);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchData());
+    if(state.data.length === 0){
+      dispatch(fetchData());
+    }
+    
   }, [dispatch]);
 
   return (
