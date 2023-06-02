@@ -34,7 +34,7 @@
 
 # 📖 [React-BookStore-App] <a name="about-project"></a>
 
-**[React-BookStore-App]** In this project user can add and delete Books and Books are stored in the browser.
+**[React-BookStore-App]** This project has been completed through React-Redux.In this project user can add and delete Books and Books are stored and deleted through API. BookList and Category Section is made. In Category section only categories are shown when user clicks on specific category then only books of that category is shown.
 
 ## 🛠 Built With <a name="HTML, CSS, Javascript and React"></a>
 
@@ -57,7 +57,8 @@
 - [x] Create a simple Bookstore web app
 - [x] Add all Your Books List
 - [x] Delete The Books which you have finished reading
-- [x] Tasks are stored in the user Browser
+- [x] Books are added and stored through API
+- [x] Categories section is shown which show only categories
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -150,7 +151,7 @@ To check for js errors run:
 
 - GitHub: [@zunairkhan811](https://github.com/zunairkhan811)
 - Twitter: [@zunairkhan811](https://twitter.com/zunairkhan811)
-- LinkedIn: [zunairkhan811](https://linkedin.com/in/zunairkhan811)
+- LinkedIn: [@mzunairkhan](https://linkedin.com/in/mzunairkhan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,7 +160,6 @@ To check for js errors run:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [x] Add test to the project using jest
-- [x] Add the live demo for the project
 - [x] Add some new features to the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
