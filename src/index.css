@@ -16,13 +16,13 @@ body {
     padding: 50px;
     margin: 0;
   }
-  
+
   .main-container {
     background: #fafafa;
     height: 100%;
     box-shadow: 0 1px 15px 1px rgb(184, 178, 178);
   }
-  
+
   .nav-container {
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@ body {
     padding: 1.438rem 4.188rem 1.688rem 4.188rem;
     background-color: #fff;
   }
-  
+
   .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -41,12 +41,12 @@ body {
     align-items: center;
     list-style: none;
   }
-  
+
   .nav-links li {
     padding: 8px;
     margin: 10px;
   }
-  
+
   .links {
     padding: 8px;
     margin: 10px;
@@ -59,11 +59,11 @@ body {
     letter-spacing: 1.9px;
     color: #121212;
   }
-  
+
   .links:active {
     color: #0290ff !important;
   }
-  
+
   .nav-logo {
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -72,12 +72,12 @@ body {
     color: #0290ff;
     font-weight: 800;
   }
-  
+
   .nav-icon {
     font-size: 25px;
     color: #0290ff;
   }
-  
+
   .card-container {
     display: flex;
     justify-content: center;
@@ -89,7 +89,7 @@ body {
     background-color: #fff;
     box-shadow: 0 1px 15px 1px rgb(184, 178, 178);
   }
-  
+
   .info-div {
     display: flex;
     justify-content: center;
@@ -102,17 +102,17 @@ body {
     border-bottom: 2px solid #e8e8e8;
   }
 
-  .remove-div{
+  .remove-div {
     margin-bottom: 29px;
   }
-  
+
   .remove-div h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: bold;
     color: #888;
   }
-  
+
   .remove-div h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 28px;
@@ -121,11 +121,10 @@ body {
     color: #121212;
     display: flex;
     flex-wrap: wrap;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .remove-div p {
     font-family: 'Roboto Slab', serif;
     font-size: 19px;
@@ -133,7 +132,7 @@ body {
     margin: 8px 0 8px 0;
     color: #4386bf;
   }
-  
+
   .remove-btn {
     border: none;
     background: white;
@@ -146,34 +145,34 @@ body {
     color: #4386bf;
     border-right: 1px solid black;
   }
-  
+
   .remove-btn:last-child {
     border-right: none;
   }
-  
+
   .complete-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
   .complete-div span {
     margin: 9px;
   }
-  
+
   .complete-div span p {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     color: #121212;
   }
-  
+
   .complete-div span p:first-child {
     font-size: 30px;
     font-weight: 500;
   }
-  
+
   .oval {
     width: 4.25rem;
     height: 4.25rem;
@@ -184,7 +183,7 @@ body {
     border-radius: 50%;
     background-color: transparent !important;
   }
-  
+
   .update-div {
     width: 100%;
     display: flex;
@@ -192,40 +191,40 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
   .update-div h2 {
     font-size: 25px;
     font-weight: 600;
     font-family: 'Roboto Slab', serif;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0 5px 0;
     color: #121212;
   }
-  
+
   .update-div h2:first-child {
     font-family: 'Roboto Slab', serif;
     text-align: center;
     font-size: 19px;
     font-weight: 300;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0 5px 0;
     color: #121212;
   }
-  
+
   .update-btn {
     font-family: 'Roboto Slab', serif;
     width: 90%;
     color: white;
     border: 1px solid;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0 5px 0;
     padding: 0.438rem 1.188rem 0.5rem 1.375rem;
     border-radius: 3px;
     background-color: #0290ff;
     transition: 0.5s;
   }
-  
+
   .update-btn:hover {
     background-color: #102f46;
   }
-  
+
   .form-container {
     display: flex;
     text-align: center;
@@ -236,13 +235,13 @@ body {
     margin: 2.375rem 0 0 0;
     padding: 13px;
   }
-  
+
   .line {
     width: 84%;
     margin: 30px auto 0 auto;
     border: 1px solid #c4c4c4;
   }
-  
+
   .form-heading {
     display: flex;
     justify-content: center;
@@ -250,7 +249,7 @@ body {
     text-align: center;
     width: 100%;
   }
-  
+
   .form-heading h1 {
     height: 1.5rem;
     margin-bottom: 30px;
@@ -259,7 +258,7 @@ body {
     color: #888;
     width: 100%;
   }
-  
+
   .input-container {
     display: flex;
     flex-direction: column;
@@ -268,7 +267,7 @@ body {
     width: 100%;
     padding: 0 0 1.688rem 0;
   }
-  
+
   #title {
     width: 100%;
     text-align: center;
@@ -286,11 +285,11 @@ body {
     line-height: normal;
     letter-spacing: -0.15px;
   }
-  
+
   #title:focus {
     outline: 1px solid #0290ff;
   }
-  
+
   #author {
     width: 100%;
     text-align: center;
@@ -308,16 +307,16 @@ body {
     line-height: normal;
     letter-spacing: -0.15px;
   }
-  
+
   #author:focus {
     outline: 1px solid #0290ff;
   }
-  
-  .category-container{
+
+  .category-container {
     height: 90vh;
   }
-  
-  .category-container ul{
+
+  .category-container ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -330,10 +329,10 @@ body {
     color: white;
     box-shadow: 0 1px 15px 1px rgb(184, 178, 178);
   }
-  
-  .category-container ul li{
+
+  .category-container ul li {
     width: 40%;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0 10px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -344,12 +343,12 @@ body {
     cursor: pointer;
     text-align: center;
   }
-  
-  .category-container ul li:hover{
+
+  .category-container ul li:hover {
     text-decoration: underline;
   }
-  
-  #categorybtn{
+
+  #categorybtn {
     width: 100%;
     text-align: center;
     height: 2.813rem;
@@ -366,12 +365,11 @@ body {
     line-height: normal;
     letter-spacing: -0.15px;
   }
-  
+
   #categorybtn:focus {
     outline: 1px solid #0290ff;
   }
-  
-  
+
   .add-book-btn {
     width: 80%;
     height: 2.813rem;
@@ -392,11 +390,11 @@ body {
     cursor: pointer;
     transition: 0.5s;
   }
-  
+
   .add-book-btn:hover {
     background-color: #102f46;
   }
-  
+
   .category-btn {
     height: 1.5rem;
     margin: 0 0 0 32rem;
@@ -409,19 +407,90 @@ body {
     letter-spacing: -0.18px;
     color: #888;
   }
-  
 }
 
 @media screen and (min-width: 768px) {
- 
- .nav-logo{
-  font-size: 2.3rem;
- }
+  .nav-logo {
+    font-size: 2.3rem;
+  }
+
+  .card-container {
+    flex-direction: row;
+  }
+
+  .info-div {
+    flex-direction: row;
+    justify-content: space-between;
+    border-right: 2px solid #e8e8e8;
+    border-bottom: none;
+  }
+
+  .remove-div {
+    text-align: left;
+  }
+
+  .remove-div h2 {
+    justify-content: left;
+  }
+
+  .update-div {
+    width: 50%;
+  }
+
+  .update-btn {
+    width: 50%;
+  }
+
+  .input-container {
+    flex-direction: row;
+  }
+
+  .form-heading {
+    width: 90%;
+  }
+
+  .form-heading h1 {
+    text-align: left;
+  }
+
+  #title {
+    width: 30%;
+    margin-right: 8px;
+    text-align: left;
+  }
+
+  #author {
+    width: 25%;
+    margin-right: 8px;
+    text-align: left;
+  }
+
+  #categorybtn {
+    width: 15%;
+    margin-right: 8px;
+  }
+
+  .add-book-btn {
+    width: 20%;
+  }
+
+  .category-container ul {
+    flex-direction: row;
+  }
+
+  .category-container ul li {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 30px 0 30px 0;
+  }
 }
 
 @media screen and (min-width: 909px) {
-  .nav-container{
+  .nav-container {
     justify-content: space-between;
-   }
-}
+  }
 
+  .complete-div {
+    flex-direction: row;
+  }
+}
