@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyBookList Component should render MyBookList component with type 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="card-container"
+      id="1"
+    >
+      <div
+        class="info-div"
+      >
+        <div
+          class="remove-div"
+        >
+          <h1>
+            Category 1
+          </h1>
+          <h2>
+            Book 1
+          </h2>
+          <p>
+            Author 1
+          </p>
+          <button
+            class="remove-btn"
+            type="button"
+          >
+            Comments
+          </button>
+          <button
+            class="remove-btn"
+            type="button"
+            value="Remove"
+          >
+            Remove
+          </button>
+          <button
+            class="remove-btn"
+            type="button"
+          >
+            Edit
+          </button>
+        </div>
+        <div
+          class="complete-div"
+        >
+          <div
+            class="oval"
+          />
+          <span>
+            <p>
+              100%
+            </p>
+            <p>
+              Completed
+            </p>
+          </span>
+        </div>
+      </div>
+      <div
+        class="update-div"
+      >
+        <h2>
+          Current Chapter
+        </h2>
+        <h2>
+          Chapter 17
+        </h2>
+        <button
+          class="update-btn"
+          type="button"
+        >
+          Update Progress
+        </button>
+      </div>
+    </div>
+    <div
+      class="line"
+    />
+  </div>
+</div>
+`;
+
+exports[`MyBookList Component should render MyBookList component without type 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="card-container"
+      id="1"
+    >
+      <div
+        class="info-div"
+      >
+        <div
+          class="remove-div"
+        >
+          <h1>
+            Category 1
+          </h1>
+          <h2>
+            Book 1
+          </h2>
+          <p>
+            Author 1
+          </p>
+          <button
+            class="remove-btn"
+            type="button"
+          >
+            Comments
+          </button>
+          <button
+            class="remove-btn"
+            type="button"
+            value="Remove"
+          >
+            Remove
+          </button>
+          <button
+            class="remove-btn"
+            type="button"
+          >
+            Edit
+          </button>
+        </div>
+        <div
+          class="complete-div"
+        >
+          <div
+            class="oval"
+          />
+          <span>
+            <p>
+              100%
+            </p>
+            <p>
+              Completed
+            </p>
+          </span>
+        </div>
+      </div>
+      <div
+        class="update-div"
+      >
+        <h2>
+          Current Chapter
+        </h2>
+        <h2>
+          Chapter 17
+        </h2>
+        <button
+          class="update-btn"
+          type="button"
+        >
+          Update Progress
+        </button>
+      </div>
+    </div>
+    <div
+      class="card-container"
+      id="2"
+    >
+      <div
+        class="info-div"
+      >
+        <div
+          class="remove-div"
+        >
+          <h1>
+            Category 2
+          </h1>
+          <h2>
+            Book 2
+          </h2>
+          <p>
+            Author 2
+          </p>
+          <button
+            class="remove-btn"
+            type="button"
+          >
+            Comments
+          </button>
+          <button
+            class="remove-btn"
+            type="button"
+            value="Remove"
+          >
+            Remove
+          </button>
+          <button
+            class="remove-btn"
+            type="button"
+          >
+            Edit
+          </button>
+        </div>
+        <div
+          class="complete-div"
+        >
+          <div
+            class="oval"
+          />
+          <span>
+            <p>
+              100%
+            </p>
+            <p>
+              Completed
+            </p>
+          </span>
+        </div>
+      </div>
+      <div
+        class="update-div"
+      >
+        <h2>
+          Current Chapter
+        </h2>
+        <h2>
+          Chapter 17
+        </h2>
+        <button
+          class="update-btn"
+          type="button"
+        >
+          Update Progress
+        </button>
+      </div>
+    </div>
+    <div
+      class="line"
+    />
+    <form
+      class="form-container"
+    >
+      <div
+        class="form-heading"
+      >
+        <h1>
+          ADD NEW BOOK
+        </h1>
+      </div>
+      <div
+        class="input-container"
+      >
+        <input
+          id="title"
+          placeholder="Book title"
+          required=""
+          type="text"
+          value=""
+        />
+        <br />
+        <input
+          id="author"
+          placeholder="Author"
+          required=""
+          type="text"
+          value=""
+        />
+        <br />
+        <select
+          id="categorybtn"
+          name="categorybtn"
+          required=""
+        >
+          <option
+            value=""
+          >
+            Select Category
+          </option>
+          <option
+            value="Science Fiction"
+          >
+            Science Fiction
+          </option>
+          <option
+            value="Horror"
+          >
+            Horror
+          </option>
+          <option
+            value="Action"
+          >
+            Action
+          </option>
+          <option
+            value="Comedy"
+          >
+            Comedy
+          </option>
+          <option
+            value="Documentary"
+          >
+            Documentary
+          </option>
+          <option
+            value="Thriller"
+          >
+            Thriller
+          </option>
+          <option
+            value="Adventure"
+          >
+            Adventure
+          </option>
+          <option
+            value="Romantic"
+          >
+            Romantic
+          </option>
+        </select>
+        <button
+          class="add-book-btn"
+          type="submit"
+          value="Add Book"
+        >
+          Add Book
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
