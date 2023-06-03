@@ -1,6 +1,5 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import MyCategory from '../components/Categories';
 

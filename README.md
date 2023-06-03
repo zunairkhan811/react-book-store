@@ -37,6 +37,8 @@
 
 **[React-BookStore-App]** This project has been completed through React-Redux.In this project user can add and delete Books and Books are stored and deleted through API. BookList and Category Section is made. In Category section only categories are shown when user clicks on specific category then only books of that category is shown.
 
+- [Video Link about Project] <a href="https://www.loom.com/share/7c270be7bc654d5ebbaf993679c2ebe0"><button type="button" color:red background: white>Click Here</button></a>
+
 ## 🛠 Built With <a name="HTML, CSS, Javascript and React"></a>
 
 ### Tech Stack <a name="tech-stack"></a>

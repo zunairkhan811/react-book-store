@@ -6,7 +6,7 @@ import MyCategory from './components/Categories';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="react-book-store">
         <div className="main">
           <div className="main-container">
             <MyLinks />
