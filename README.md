@@ -162,7 +162,6 @@ To check for js errors run:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] Add test to the project using jest
 - [x] Add some new features to the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
