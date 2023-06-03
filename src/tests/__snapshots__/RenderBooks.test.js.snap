@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Component should render Render component 1`] = `
+<div>
+  <div
+    class="card-container"
+    id="1"
+  >
+    <div
+      class="info-div"
+    >
+      <div
+        class="remove-div"
+      >
+        <h1>
+          Category 1
+        </h1>
+        <h2>
+          Book 1
+        </h2>
+        <p>
+          Author 1
+        </p>
+        <button
+          class="remove-btn"
+          type="button"
+        >
+          Comments
+        </button>
+        <button
+          class="remove-btn"
+          type="button"
+          value="Remove"
+        >
+          Remove
+        </button>
+        <button
+          class="remove-btn"
+          type="button"
+        >
+          Edit
+        </button>
+      </div>
+      <div
+        class="complete-div"
+      >
+        <div
+          class="oval"
+        />
+        <span>
+          <p>
+            100%
+          </p>
+          <p>
+            Completed
+          </p>
+        </span>
+      </div>
+    </div>
+    <div
+      class="update-div"
+    >
+      <h2>
+        Current Chapter
+      </h2>
+      <h2>
+        Chapter 17
+      </h2>
+      <button
+        class="update-btn"
+        type="button"
+      >
+        Update Progress
+      </button>
+    </div>
+  </div>
+</div>
+`;

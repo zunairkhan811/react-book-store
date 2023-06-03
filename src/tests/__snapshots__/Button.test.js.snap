@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component should render Button component 1`] = `
+<div>
+  <button
+    class="my-button"
+    type="button"
+    value="Click me"
+  >
+    Click me
+  </button>
+</div>
+`;
+
+exports[`Button Component should render Button component with default onClick 1`] = `
+<div>
+  <button
+    class="my-button"
+    type="submit"
+    value="Submit"
+  >
+    Submit
+  </button>
+</div>
+`;
