@@ -2,7 +2,8 @@
 
 <div align="center">
 
-  <h3><b>React BookStore App</b></h3>
+  <h3><b>**React BookStore App**</b></h3>
+  <img src="./src/images/reactbookscreenshot.png" alt="Projectimage">
 
 </div>
 
