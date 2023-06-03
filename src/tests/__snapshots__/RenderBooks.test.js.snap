@@ -4,7 +4,6 @@ exports[`Render Component should render Render component 1`] = `
 <div>
   <div
     class="card-container"
-    id="1"
   >
     <div
       class="info-div"

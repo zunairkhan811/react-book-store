@@ -7,7 +7,6 @@ exports[`MyBookList Component should render MyBookList component with type 1`] =
   >
     <div
       class="card-container"
-      id="1"
     >
       <div
         class="info-div"
@@ -91,7 +90,6 @@ exports[`MyBookList Component should render MyBookList component without type 1`
   >
     <div
       class="card-container"
-      id="1"
     >
       <div
         class="info-div"
@@ -163,7 +161,6 @@ exports[`MyBookList Component should render MyBookList component without type 1`
     </div>
     <div
       class="card-container"
-      id="2"
     >
       <div
         class="info-div"
@@ -266,6 +263,7 @@ exports[`MyBookList Component should render MyBookList component without type 1`
         />
         <br />
         <select
+          data-testid="category-select"
           id="categorybtn"
           name="categorybtn"
           required=""

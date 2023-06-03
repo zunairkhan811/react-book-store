@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyCategory Component should render MyCategory component 1`] = `
+<div>
+  <div
+    class="category-container"
+  >
+    <ul
+      class=""
+    >
+      <li
+        role="presentation"
+      >
+        Category 1
+      </li>
+      <li
+        role="presentation"
+      >
+        Category 2
+      </li>
+      <li
+        role="presentation"
+      >
+        Category 3
+      </li>
+    </ul>
+  </div>
+</div>
+`;

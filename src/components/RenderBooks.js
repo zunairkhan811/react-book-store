@@ -4,7 +4,7 @@ import Button from './Button';
 import removeBooks from '../redux/books/removeDataFromApi';
 
 function Render({
-  id, title, author, category, key,
+  id, title, author, category,
 }) {
   const dispatch = useDispatch();
   const removedBooks = () => {
@@ -13,7 +13,7 @@ function Render({
   return (
     <>
 
-      <div id={id} className="card-container" key={key}>
+      <div key={id} className="card-container">
         <div className="info-div">
           <div className="remove-div">
             <h1>{category}</h1>
@@ -53,7 +53,6 @@ Render.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
-  key: PropTypes.string.isRequired,
 };
 
 export default Render;
